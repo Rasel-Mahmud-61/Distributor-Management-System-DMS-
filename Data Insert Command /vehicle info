@@ -1,0 +1,6 @@
+
+INSERT INTO tblvehicle(chassisNO,driverName,workerId)
+VALUES('500100','Abdur Rahim',1001),
+('500300','Sabuj Hosan',1005),
+('500100','Sahed Ali',1008);
+
