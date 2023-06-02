@@ -1,0 +1,11 @@
+CREATE TABLE tblstock(
+
+productId int(11),
+    expirayDate date,
+    productTP double,
+    productDP double,
+    productMRP double,
+    productAmountInKg double,
+    productAmountInTk double,
+    FOREIGN KEY(productId) REFERENCES tblproduct(productId)
+);
