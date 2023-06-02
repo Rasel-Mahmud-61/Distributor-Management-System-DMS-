@@ -1,0 +1,11 @@
+CREATE TABLE tblworker(
+
+workerId int(11),
+ workerName varchar(50),
+    workerType varchar(50),
+    workerPhoneNumber varchar(15),
+    workerAddress varchar(50),
+    workerMonthlySalary double ,
+    workerMonthyAllowance double,
+    PRIMARY KEY(workerId) 
+);
