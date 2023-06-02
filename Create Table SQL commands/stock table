@@ -9,3 +9,11 @@ productId int(11),
     productAmountInTk double,
     FOREIGN KEY(productId) REFERENCES tblproduct(productId)
 );
+ALTER TABLE tblstock CHANGE productAmountInKg productPcs int;
+
+ALTER TABLE tblstock
+CHANGE productAmountInTk productTotalTk int ;
+ALTER TABLE tblstock
+CHANGE expirayDate expiryDate date ;
+
+
