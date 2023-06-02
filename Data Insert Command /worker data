@@ -1,0 +1,12 @@
+
+INSERT INTO tblworker(workerId,workerName,workerType,workerPhoneNumber,workerAddress,workerMonthlySalary,workerMonthyAllowance)
+VALUES(1001,'Abdur Rahim','Driver','01848347563','Modina Market,Sylhet',15000,2000),
+(1002,'Abdur Rahim','Warehouse Staff','01423891289','Zindabazar,sylhet',13000,2500),
+(1003,'Momin Sarkar','Packaging Operators','01323434589','noyasarok,sylhet',17000,2000),
+(1004,'Jakaria Hossain','Sales Representatives','01844354354','Tilagor,sylhet',16000,3000),
+(1005,'Sobuj hosan','Delivery Drivers','01934335322','akhaliya,sylhet',15000,2000),
+(1006,'Manik Mia','Packaging Operators','01732343343','Zindabazar,sylhet',16000,1000),
+(1007,'Abdur Rasid','Warehouse Staff','01845344534','modina market,sylhet',14000,2500),
+(1008,'Sahed Ali','Delivery Drivers','01855232233','Noya sarok,sylhet',17000,3000),
+(1009,'kairul Basar','Warehouse Staff','0185345453','Bondorbazar,sylhet',18000,3400),
+(1010,'Homayon kobir','Sales Representatives','01843432433','Akhaliya,sylhet',18000,2500);
