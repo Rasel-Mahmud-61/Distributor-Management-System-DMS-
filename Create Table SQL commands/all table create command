@@ -1,0 +1,97 @@
+CREATE TABLE tblproduct(
+
+productId int(11),
+ productCatagory varchar(50),
+    productNetWeight double,
+    PRIMARY KEY(productId)
+    
+);
+CREATE TABLE tblstock(
+
+productId int(11),
+    expirayDate date,
+    productTP double,
+    productDP double,
+    productMRP double,
+    productAmountInKg double,
+    productAmountInTk double,
+    FOREIGN KEY(productId) REFERENCES tblproduct(productId)
+);
+CREATE TABLE tblsupplier(
+  supplierId int(11),
+    supplierName varchar(50),
+    supplierPhoneNumber varchar(15),
+    supplierAdress varchar(50),
+    PRIMARY KEY(supplierId)
+);
+CREATE TABLE tblworker(
+
+workerId int(11),
+ workerName varchar(50),
+    workerType varchar(50),
+    workerPhoneNumber varchar(15),
+    workerAddress varchar(50),
+    workerMonthlySalary double ,
+    workerMonthyAllowance double,
+    PRIMARY KEY(workerId) 
+);
+
+CREATE TABLE tblcustomer(
+
+    customerId int(11),
+    customerName varchar(50),
+    customerPhoneNumber varchar(15),
+    customerAddress varchar(50),
+    PRIMARY key(customerId)
+);
+
+CREATE TABLE tblorder(
+
+orderDate date,
+    productId int(11),
+    productAmountInkg double,
+    productAmountInTk double,
+    customerId int(11),
+    deliveryDate date,
+    deliveryStatus tinyint(1),
+     FOREIGN KEY(productId) REFERENCES tblproduct(productId),
+    FOREIGN KEY(customerId) REFERENCES tblcustomer(customerId)
+);
+
+CREATE TABLE tblsupply(
+
+supplyDate date,
+    productId int(11),
+    productAmountInKg double ,
+    productAmountInTk double,
+    
+    FOREIGN KEY(productId) REFERENCES tblproduct(productId)
+);
+
+CREATE TABLE tblvehicle(
+
+chassisNO varchar(20),
+    driverName varchar(40),
+    workerId int(11),
+    FOREIGN KEY(workerId) REFERENCES tblworker(workerId)
+
+);
+ALTER TABLE tblstock CHANGE productAmountInKg productPcs int;
+
+ALTER TABLE tblstock
+CHANGE productAmountInTk productTotalTk int ;
+ALTER TABLE tblstock
+CHANGE expirayDate expiryDate date ;
+
+
+
+
+CREATE TABLE tbltransaction(
+transactionId int(11),
+    transactionAction varchar(50),
+    transactionDescription varchar(50),
+    transactionAmountTk double,
+    transactionDate date ,
+    PRIMARY KEY(transactionId)
+);
+
