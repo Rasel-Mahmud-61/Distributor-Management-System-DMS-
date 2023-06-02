@@ -1,0 +1,14 @@
+INSERT INTO tblcustomer(customerId,customerName,customerPhoneNumber,customerAddress)
+VALUES(100000,'Bismillah Shore','01797934311','Sylhet - Sunamganj Hwy, Sylhet 3100'),
+(100001,'Al Haramain Super Shop','01797934311',' East Zindabazar, Sylhet.'),
+(100002,'Bismillah Store','01797934311','Modina Marker,sylhet'),
+(100003,'Popy Veraite Store','01727379292','Ground Floor, Raza Mansion, Jallarpar Road, Sylhet'),
+(100004,'Tania & Talha Veraitis','01923456243','Kaniz Plaza, Zindabazar, Sylhet'),
+(100005,'Emaniya Store','01623547619','Mirza Jangal Road,sylhet'),
+(100006,'Rifat and Co','01798902045','Kakoli Shopping Centre, Zindabazar, Sylhet.'),
+(100007,'Star Super Market','01389020456',' Laldighirpar, Sylhet.'),
+(100008,'Swapno Super Shop','01809235847','Naya Sarak, Sylhet.'),
+(100009,'Bismillah Shore','01947326334','Modina Marker, medical road'),
+(100010,'Agora Super Shop','01547587778','Nayasarak Point, Sylhet');
+
+
