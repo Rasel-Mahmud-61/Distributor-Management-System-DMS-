@@ -1,0 +1,13 @@
+
+INSERT INTO 
+tblproduct(productid, productCatagory, productNetWeight)
+VALUES(100, 'PUSTIATTA', 1),
+(101, 'PUSTIATTA', 2),
+(102, 'PUSTIOIL', 1),
+(103, 'PUSTIOIL', 2),
+(104, 'PUSTIMAIDA', 0.5),
+(105, 'PUSTIMAIDA', 1),
+(106, 'PUSTITEA', 0.1),
+(107, 'PUSTITEA', 0.5),
+(108, 'PUSTIWATER', 1),
+(109, 'PUSTIWATER', 2);
