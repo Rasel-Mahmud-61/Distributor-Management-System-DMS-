@@ -1,0 +1,8 @@
+CREATE TABLE tblvehicle(
+
+chassisNO varchar(20),
+    driverName varchar(40),
+    workerId int(11),
+    FOREIGN KEY(workerId) REFERENCES tblworker(workerId)
+
+);
