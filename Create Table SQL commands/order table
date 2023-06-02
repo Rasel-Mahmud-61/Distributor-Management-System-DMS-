@@ -1,0 +1,12 @@
+CREATE TABLE tblorder(
+
+orderDate date,
+    productId int(11),
+    productAmountInkg double,
+    productAmountInTk double,
+    customerId int(11),
+    deliveryDate date,
+    deliveryStatus tinyint(1),
+     FOREIGN KEY(productId) REFERENCES tblproduct(productId),
+    FOREIGN KEY(customerId) REFERENCES tblcustomer(customerId)
+);
