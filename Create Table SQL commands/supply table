@@ -1,0 +1,9 @@
+CREATE TABLE tblsupply(
+
+supplyDate date,
+    productId int(11),
+    productAmountInKg double ,
+    productAmountInTk double,
+    
+    FOREIGN KEY(productId) REFERENCES tblproduct(productId)
+);
