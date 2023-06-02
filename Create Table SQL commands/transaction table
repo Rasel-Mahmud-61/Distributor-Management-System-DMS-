@@ -1,0 +1,9 @@
+
+CREATE TABLE tbltransaction(
+transactionId int(11),
+    transactionAction varchar(50),
+    transactionDescription varchar(50),
+    transactionAmountTk double,
+    transactionDate date ,
+    PRIMARY KEY(transactionId)
+);
