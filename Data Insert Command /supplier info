@@ -1,0 +1,7 @@
+INSERT into tblsupplier(supplierId,supplierName,supplierPhoneNumber,supplierAdress)
+VALUES(100000,'Md Hasan','01710349273','Tilagor,sylhet'),
+(100001,'Md Tanvir','01838412840','Akhalia,sylhet'),
+(100002,'Md Alamgir Kabir','01735294231','Bondorbazar,sylhet'),
+(100003,'Farid Ahmed','01683092343','Sherpur,moulvibazar'),
+(100004,'Abu Rayhan','01710349234','Ambarkhana,sylhet'),
+(100005,'Tawsif Hossain','01893832334','Ambarkhana,sylhet');
