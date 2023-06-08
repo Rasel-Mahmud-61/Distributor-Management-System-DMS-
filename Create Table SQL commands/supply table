@@ -1,9 +1,12 @@
 CREATE TABLE tblsupply(
+ supplyDate date,
+   productId int ,
+    pcd int ,
+    totalPrice double,
+    supplierId int,
+   FOREIGN KEY(productId) REFERENCES tblproduct(productId),
+    FOREIGN KEY(supplierId) REFERENCES tblsupplier(supplierId)
 
-supplyDate date,
-    productId int(11),
-    productAmountInKg double ,
-    productAmountInTk double,
-    
-    FOREIGN KEY(productId) REFERENCES tblproduct(productId)
+
+
 );
