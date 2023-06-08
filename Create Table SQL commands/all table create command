@@ -101,3 +101,7 @@ transactionId int(11),
     PRIMARY KEY(transactionId)
 );
 
+ALTER TABLE tblorder 
+CHANGE productAmountInkg pcs int ;
+ALTER TABLE tblorder 
+CHANGE productAmountInTk totalPrice double ;
