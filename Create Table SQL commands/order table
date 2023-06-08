@@ -10,3 +10,8 @@ orderDate date,
      FOREIGN KEY(productId) REFERENCES tblproduct(productId),
     FOREIGN KEY(customerId) REFERENCES tblcustomer(customerId)
 );
+
+ALTER TABLE tblorder 
+CHANGE productAmountInkg pcs int ;
+ALTER TABLE tblorder 
+CHANGE productAmountInTk totalPrice double ;
