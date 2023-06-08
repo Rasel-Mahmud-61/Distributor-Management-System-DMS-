@@ -10,3 +10,5 @@ CREATE TABLE tblsupply(
 
 
 );
+ALTER TABLE tblsupply
+CHANGE pcd pcs int ;
