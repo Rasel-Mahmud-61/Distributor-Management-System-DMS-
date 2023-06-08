@@ -71,6 +71,9 @@ CREATE TABLE tblsupply(
 
 );
 
+ALTER TABLE tblsupply
+CHANGE pcd pcs int ;
+
 CREATE TABLE tblvehicle(
 
 chassisNO varchar(20),
